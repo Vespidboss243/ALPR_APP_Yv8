@@ -1,0 +1,240 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+body {
+    color: #3a7dc1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 93%;
+    font-weight: normal;
+    margin: 0;
+}
+
+#table-main-screen {
+    background-image: url('../../assets/bg1.jpg');
+    background-size: cover;
+    background-position: center center;
+    animation: wallpaper-animation 20s infinite;
+    max-height: 100vh;
+    max-width: 100vw;
+    font-family: 'Montserrat', sans-serif;
+    color: #3a7dc1;
+    text-align: center;
+    overflow: hidden scroll;
+}
+
+table {
+    border-collapse: collapse;
+    width: 30vw;
+    text-align: center;
+}
+
+th {
+    background-color: #001F47;
+    color: #fff;
+    padding: 8px;
+    text-emphasis: bold;
+    text-align: center;
+
+}
+
+tbody tr:nth-child(even) {
+    padding: 8px;
+    background-color: #004094;
+    color: #fff;
+    text-align: center;
+
+
+    button {
+        background-color: #003170;
+        color: #fff !important;
+        border: none;
+        border-radius: 0.75vw;
+        cursor: pointer;
+        align-self: center center;
+        transition: background-color 0.3s ease;
+
+    }
+
+    button:hover {
+        background-color: #001F47;
+        color: #fff;
+        border: none;
+
+    }
+}
+
+tbody tr:nth-child(odd) {
+    padding: 8px;
+    color: #000;
+    text-align: center;
+
+    button {
+        background-color: #0054C2;
+        color: #fff;
+        border: none;
+        border-radius: 0.75vw;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #004094;
+        color: #fff;
+        border: none;
+
+    }
+
+}
+
+
+
+table td {
+    padding: 8px;
+    text-align: center;
+}
+
+.navbar {
+
+    width: 100vw;
+    height: 7.5vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004094;
+    z-index: 1;
+}
+
+.navbar__title {
+
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 1vw;
+}
+
+.navbar__links {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar__links li {
+    margin: 0 1rem;
+    list-style: none;
+}
+
+.navbar__links li:first-child {
+    margin-left: 0;
+}
+
+.navbar__links li:last-child {
+    margin-right: 0;
+}
+
+#navbar__button {
+    flex: 0 0 auto;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0c57ba;
+    font-weight: bold;
+    border: none;
+    border-radius: 8vw;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 0.75vh;
+    cursor: pointer;
+
+
+}
+
+#navbar__button:hover {
+    background-color: #001F47;
+}
+
+
+.navbar__links-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login__container {
+    margin-right: 5vw;
+}
+
+.striped-table {
+    width: 90%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.table-screen {
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+    border-radius: 2vw;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1vw;
+    padding-bottom: 5vw;
+}
+
+.edit-screen {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #3a7dc1;
+    text-align: center;
+    overflow: hidden;
+}
+
+.edit-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.edit-box {
+    width: 500px;
+    height: 650px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding-top: 5px;
+}
+
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #3a7dc1;
+    background-color: #dce0e5;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #3e9dff;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

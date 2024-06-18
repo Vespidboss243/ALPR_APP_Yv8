@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 41px;
+    color: #3a7dc1;
+}
+
+@keyframes wallpaper-animation {
+    0% {
+        background-image: url('../../assets/bg1.jpg');
+    }
+
+    25% {
+        background-image: url('../../assets/bg2.jpg');
+    }
+
+    75% {
+        background-image: url('../../assets/bg3.jpg');
+    }
+
+    100% {
+        background-image: url('../../assets/bg1.jpg');
+    }
+}
+
+.login-screen {
+    background-image: url('../../assets/bg1.jpg');
+    background-size: cover;
+    background-position: center center;
+    animation: wallpaper-animation 20s infinite;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #3a7dc1;
+    text-align: center;
+    overflow: hidden;
+}
+
+.login-error {
+    font-weight: bold;
+    color: #3a7dc1;
+    background-color: rgba(200, 220, 240, 0.8);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.icon-container {
+    margin: 10% auto;
+}
+
+.login-photo {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    max-height: 75%;
+}
+
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.login-box {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 320px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #3a7dc1;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #3e9dff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.lng {
+    margin-right: 3px;
+    background-color: #3e9dff;
+    border: none;
+}
